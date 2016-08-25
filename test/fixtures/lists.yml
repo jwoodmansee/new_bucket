@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  goal: MyString
+  discription: MyString
+  completed: false
+  bucket: one
+
+two:
+  goal: MyString
+  discription: MyString
+  completed: false
+  bucket: two

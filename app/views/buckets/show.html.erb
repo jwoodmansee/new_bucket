@@ -1,0 +1,7 @@
+<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+<h4> Welcome <%= current_user.first_name %> </h4>
+
+<%= @bucket.name %>
+<br />
+<%= link_to 'Make A List', new_bucket_list_path(@bucket, @list) %>
+

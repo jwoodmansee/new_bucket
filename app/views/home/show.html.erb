@@ -1,0 +1,13 @@
+<% if current_user %>
+  <span>Welcome <%= current_user.first_name %> </span>
+  <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+  <%= link_to 'New Bucket', new_bucket_path(current_user) %>
+<% else %>  
+  <%= link_to 'Sign In', new_user_session_path %>
+<% end %>  
+
+<h3> Welcome </h3>
+
+<p> Are you sick of your life's current events and want more, or are you nearing the end of your life?</p> 
+
+<p>Here you can create bucket list so that you can be meaning back to your life</p> 
